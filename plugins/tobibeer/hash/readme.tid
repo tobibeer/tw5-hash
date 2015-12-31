@@ -5,6 +5,19 @@ The plugin $:/plugins/tobibeer/hash provides:
 ; hash[]
 : a filter to URI-encode tiddler titles to permalink or permaview hashes or decode hashes back to titles
 
+!! Syntax
+
+; `[hash[foo bar]]`
+: encode title to permalink
+; `[[foo bar]hash[]]`
+: dito
+; `[tag[foo]hash[]]`
+: encode titles to permaview
+; `[foo%20bar]hash:decode[]]`
+: decode hash to title(s)
+; `[hash:decode full[http://tiddlywiki.com#Customize%20TiddlyWiki]]`
+: decode full url to title(s)
+
 <br>
 
 ; documentation / examples / demos...
