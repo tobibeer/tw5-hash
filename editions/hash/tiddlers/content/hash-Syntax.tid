@@ -1,6 +1,6 @@
 created: 20151231090417442
 creator: Tobias Beer
-modified: 20151231093937893
+modified: 20151231141402617
 modifier: Tobias Beer
 title: hash-Syntax
 type: text/vnd.tiddlywiki
@@ -32,3 +32,11 @@ To decode a fully qualified url back to tiddler titles, use both the suffixes ''
 
 <<` """{{{ HelloThere [[Customize TiddlyWiki]]
 +[hash[]addprefix[http://tiddlywiki.com#]hash:decode full[]] }}}""">>
+
+!! Macro Example
+
+<$macrocall $name="`" text="""Want to <<route "Customise TiddlyWiki" "customize">> TiddlyWiki? Go check out my <<route Plugins plugins>>!"""/>
+
+In the route macro below, the [[setvars]] widget creates a link to tiddlywiki.com if no local tiddler for the title exists, encoding it using the [[hash]] filter, showing a pretty title if given:
+
+<<source "$://macro/route">>
