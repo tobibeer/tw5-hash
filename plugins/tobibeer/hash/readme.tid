@@ -1,0 +1,11 @@
+title: $:/plugins/tobibeer/hash/readme
+
+The plugin $:/plugins/tobibeer/hash provides:
+
+; hash[]
+: a filter to URI-encode tiddler titles to permalink or permaview hashes or decode hashes back to titles
+
+<br>
+
+; documentation / examples / demos...
+: http://tobibeer.github.io/tw5-plugins#hash

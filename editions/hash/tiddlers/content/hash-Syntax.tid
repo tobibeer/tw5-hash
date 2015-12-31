@@ -1,0 +1,34 @@
+created: 20151231090417442
+creator: Tobias Beer
+modified: 20151231093937893
+modifier: Tobias Beer
+title: hash-Syntax
+type: text/vnd.tiddlywiki
+
+!! Encoding Titles
+
+The ''hash'' filter <<x PermaLinks "uri encodes">> a title specified in the filter operand or a __single__ input title to a <<x "WidgetMessage: tm-permalink" "permalink hash">>, the bit after the hash `#` in a TiddlyWiki url:
+
+<<` """{{{ [[foo bar]hash[]] }}} = <$list filter="[hash[foo bar]]"/>""">>
+
+Given __multiple__ input titles and __no operand__, the hash is encoded to a  <<x "WidgetMessage: tm-permaview" "permaview hash">>:
+
+<<` """{{{"foo bar" baz +[hash[]] }}}""">>
+
+To create a fully qualified url, use the <<x "addprefix Operator" "addprefix operator">>, e.g.
+
+<$macrocall $name="`" text="""<$set name=url
+filter="[[WidgetMessage: tm-permalink]] [[WidgetMessage: tm-permaview]] +[hash[]addprefix[http://tiddlywiki.com#]]">
+<a href=<<url>> target="_blank">Click</a>
+</$set>"""/>
+
+!! Decoding Hashes
+
+You can also decode uri hashes back to tiddler titles, using the suffix ''decode'':
+
+<<` """{{{ [[foo bar]hash[]hash:decode[]] }}}""">>
+
+To decode a fully qualified url back to tiddler titles, use both the suffixes ''decode'' and ''full'':
+
+<<` """{{{ HelloThere [[Customize TiddlyWiki]]
++[hash[]addprefix[http://tiddlywiki.com#]hash:decode full[]] }}}""">>

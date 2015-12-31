@@ -1,0 +1,13 @@
+created: 20151231093657497
+creator: Tobias Beer
+modified: 20151231093659198
+modifier: Tobias Beer
+title: hash-Install
+type: text/vnd.tiddlywiki
+
+<<plugin-install hash>>
+
+!! Version History
+
+; 0.5.0 / 2015-12-31
+: initial version

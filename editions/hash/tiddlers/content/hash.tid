@@ -1,0 +1,10 @@
+created: 20151231085910632
+creator: Tobias Beer
+modified: 20151231092048987
+modifier: Tobias Beer
+tabs: Info Syntax Install
+tags: Plugins Filters
+title: hash
+type: text/vnd.tiddlywiki
+
+<<plugin-docs hash>>

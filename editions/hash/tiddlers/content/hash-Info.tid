@@ -1,0 +1,17 @@
+created: 20151231085916251
+creator: Tobias Beer
+modified: 20151231093424728
+modifier: Tobias Beer
+title: hash-Info
+type: text/vnd.tiddlywiki
+
+The plugin $:/plugins/tobibeer/hash provides:
+
+; hash[]
+: a filter to URI-encode tiddler titles to permalink or permaview hashes or decode hashes back to titles
+: ''encodes'' an input title or operand to a <<x "WidgetMessage: tm-permalink" permalink>>
+:: encodes more than one input title to a <<x "WidgetMessage: tm-permaview" permaview>>
+: ''decodes'' permalink or permaview hashes or fully qualified urls
+:: returning tiddler titles
+
+<<plugin-docs-cp hash>>
